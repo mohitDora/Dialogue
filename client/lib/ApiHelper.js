@@ -1,4 +1,4 @@
-"use server";
+// "use server";
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 const handleResponse = async (response) => {
