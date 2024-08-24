@@ -76,5 +76,5 @@ io.on("connection", (socket) => {
 
 startMessageConsumer();
 
-const PORT = 4000 || "https://dialogue-server.vercel.app/";
+const PORT = 4000 || "https://dialogue-server.vercel.app";
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
