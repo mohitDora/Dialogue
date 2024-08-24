@@ -18,6 +18,7 @@ const io = socketIo(server, {
     origin: ["http://localhost:3000", "https://dialogue-nine.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     credentials: true,
+    preflightContinue: false,
   },
 });
 
@@ -25,6 +26,7 @@ const corsOptions = {
   origin: ["http://localhost:3000", "https://dialogue-nine.vercel.app"],
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
+  preflightContinue: false,
 };
 
 app.use(cors(corsOptions));
