@@ -82,7 +82,7 @@ export default function Chat() {
       <SendFriendRequest senderId={senderId} />
       <FriendRequests userId={senderId} />
       <Friends userId={senderId} setReceiverId={setReceiverId} />
-      <LogoutLink>Log out</LogoutLink>
+      <LogoutLink postLogoutRedirectURL="https://dialogue-nine.vercel.app/">Log out</LogoutLink>
     </div>
   );
 }
