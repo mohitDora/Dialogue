@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/components/shared/Navbar";
 
 export const metadata = {
