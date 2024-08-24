@@ -21,6 +21,7 @@ export default function Friends({ setReceiverId, userId }) {
         const { rows } = await getFriendRequests(userId);
         setFriends(rows);
       } catch (err) {
+        console.log(err)
         setError("Failed to load friends. Please try again.");
       } finally {
         setLoading(false); // Set loading to false after fetch attempt
