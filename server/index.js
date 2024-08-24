@@ -15,14 +15,14 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: process.env.FRONTEND_URL,
+    origin: ["http://localhost:3000", "https://dialogue-nine.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     credentials: true,
   },
 });
 
 const corsOptions = {
-  origin: process.env.FRONTEND_URL,
+  origin: ["http://localhost:3000", "https://dialogue-nine.vercel.app"],
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
